@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="../Style/calculadora.css" media="screen" />
+</head>
+<body>
+    <div class="fundo">
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <p id="visor_resultado"></p>
+            <table>
+                <tr>
+                    <td><button type="button" class="botao" onclick="Limpa()">C</button></td>
+                    <td><button type="button" class="botao" id="apagador" onclick="Apaga()"><</button></td>
+                    <td><button type="button" class="botao" id="divisor" onclick="Digita('/')">/</button></td>
+                    <td><button type="button" class="botao" id="multiplicador" onclick="Digita('x')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="botao" onclick="Digita('7')" id="num7">7</button></td>
+                    <td><button type="button" class="botao" onclick="Digita('8')" id="num8">8</button></td>
+                    <td><button type="button" class="botao" onclick="Digita('9')" id="num9">9</button></td>
+                    <td><button type="button" class="botao" id="adicao" onclick="Digita('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" class="botao" onclick="Digita('4')" id="num4">4</button></td>
+                    <td><button type="button" class="botao" onclick="Digita('5')" id="num5">5</button></td>
+                    <td><button type="button" class="botao" onclick="Digita('6')" id="num6">6</button></td>
+                    <td><button type="button" class="botao" id="subtracao" onclick="Digita('-')">-</button></td>
+                </tr>
+                <tr>
+                    
+                    <td><button type="button" class="botao" onclick="Digita('1')" id="num1">1</button></td>
+                    <td><button type="button" class="botao" onclick="Digita('2')" id="num2">2</button></td>
+                    <td><button type="button" class="botao" onclick="Digita('3')" id="num3">3</button></td>
+                    <td rowspan="2"><button type="button" class="botao" id="igual_botao" onclick="Calcular()" style="height: 106px;">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button  type="button" class="botao" onclick="Digita('0')" id="num0" style="width: 106px;">0</button></td>
+                    <td><button type="button" class="botao" id="ponto" onclick="Digita('.')">.</button></td>
+                </tr>
+            </table>       
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="../Js/calculadora.js"></script>
